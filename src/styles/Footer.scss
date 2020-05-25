@@ -1,0 +1,66 @@
+.footer {
+  line-height: auto;
+  &-content {
+    background: $color-background-yellow;
+    padding: 20px;
+    &__box {
+      width: 23%;
+      &-wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-title {
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      &-list {
+        list-style: none;
+      }
+
+      &-item {
+        text-align: left;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2rem;
+        margin-left: 16px;
+        &::before {
+          content: "\2022";
+          color: white;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+
+    &__info {
+      color: black;
+      text-align: left;
+      &-phone {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      &-address {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        margin-bottom: 10px;
+        &--bold {
+          font-weight: bold;
+        }
+      }
+      &-mail {
+      }
+    }
+  }
+  &__bar {
+    background: $color-background-red;
+    padding: 2px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}

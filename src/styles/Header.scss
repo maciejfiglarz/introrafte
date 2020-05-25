@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  background: $color-background-red;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &__menu {
+    display: flex;
+    padding: 5px 0;
+    &-item {
+      padding: 10px;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "./abstracts/_reset.scss";
+@import "./abstracts/_mixins.scss";
+@import "./abstracts/_variables.scss";
+
+@import "./Header.scss";
+@import "./MenuResponsive.scss";
+@import "./Clients.scss";
+@import "./Contact.scss";
+@import "./Footer.scss";
+@import "./Portfolio.scss";
+@import "./SliderMain.scss";
+
+body {
+  background-color: #fff;
+  font-size: 10px;
+  color:white;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+.container {
+  width: 97%;
+  max-width: 1100px;
+  margin: 0 auto;
+}

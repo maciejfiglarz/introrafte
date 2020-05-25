@@ -1,0 +1,59 @@
+.clients {
+  padding: 3vh 0;
+  &__title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    color: $color-background-red;
+    margin-bottom: 20px;
+  }
+  &__items {
+    position: relative;
+    img {
+      filter: grayscale(100%);
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+  .swiper-button-next-uniq {
+    right: -50px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    svg {
+      polygon {
+        fill: $color-background-red;
+      }
+    }
+    &:hover {
+      svg {
+        polygon {
+          fill: black;
+        }
+      }
+    }
+  }
+  .swiper-button-prev-uniq {
+    left: -50px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+ 
+    svg {
+      transition: all .3s linear;
+      scale:1;
+      polygon {
+        fill: $color-background-red;
+      }
+    }
+    &:hover {
+      svg {
+        scale:1.2;
+        polygon {
+          fill: black;
+        }
+      }
+    }
+  }
+}
