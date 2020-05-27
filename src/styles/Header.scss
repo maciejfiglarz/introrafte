@@ -1,8 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  overflow: hidden;
-  z-index: 2;
+  z-index: 999;
   background: $color-background-red;
 
   &__container {
@@ -11,13 +10,34 @@
     justify-content: flex-end;
     align-items: flex-end;
   }
+  &__logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 120px;
+    transform: translateY(60%);
+    img {
+      width: 120px;
+    }
+  }
   &__menu {
     display: flex;
-    padding: 5px 0;
+
     &-item {
-      padding: 10px;
-      font-size: 1.6rem;
+      padding: 15px 10px;
+      font-size: 1.5rem;
       text-transform: uppercase;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+      color: white;
+      opacity: 0.7;
+      transition-duration: 1s;
+      &:hover {
+        background: $color-background-red-hover;
+        opacity: 1;
+      }
     }
   }
 }

@@ -46,7 +46,7 @@ const SliderMain = () => {
             <div className="slider-main__content">
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-              <button>{item.button}</button>
+              {/* <button>{item.button}</button> */}
             </div>
           </div>
         ))}

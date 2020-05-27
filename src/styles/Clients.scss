@@ -1,7 +1,8 @@
 .clients {
   padding: 3vh 0;
   &__title {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
     width: 100%;
     text-align: center;
     color: $color-background-red;
@@ -21,8 +22,10 @@
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
+    cursor: pointer;
     svg {
       polygon {
+        transition-duration: 2s;
         fill: $color-background-red;
       }
     }
@@ -39,17 +42,17 @@
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
- 
+    cursor: pointer;
     svg {
       transition: all .3s linear;
       scale:1;
       polygon {
+        transition-duration: 2s;
         fill: $color-background-red;
       }
     }
     &:hover {
       svg {
-        scale:1.2;
         polygon {
           fill: black;
         }

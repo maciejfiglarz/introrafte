@@ -1,7 +1,11 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 
-import first from "./../img/bulgaria.png";
+import orange from "./../img/clients/orange.png";
+import aluform from "./../img/clients/aluform.png";
+import goldenmed from "./../img/clients/goldenmed.png";
+import kappa from "./../img/clients/kappa.png";
+import lidl from "./../img/clients/lidl.png";
 
 const Clients = () => {
   const params = {
@@ -45,29 +49,22 @@ const Clients = () => {
       <div className="clients__items">
         <Swiper {...params}>
           <div>
-            <img src={first} />
+            <img src={orange} />
           </div>
           <div>
-            <img src={first} />
+            <img src={aluform} />
           </div>
           <div>
-            <img src={first} />
+            <img src={goldenmed} />
           </div>
           <div>
-            <img src={first} />
+            <img src={kappa} />
           </div>
           <div>
-            <img src={first} />
-          </div>
-          <div>
-            <img src={first} />
-          </div>
-
-          <div>
-            <img src={first} />
+            <img src={lidl} />
           </div>
         </Swiper>
-        <div class="swiper-button-next-uniq">
+        {/* <div className="swiper-button-next-uniq">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -81,7 +78,7 @@ const Clients = () => {
             ></polygon>
           </svg>
         </div>
-        <div class="swiper-button-prev-uniq">
+        <div className="swiper-button-prev-uniq">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -94,7 +91,7 @@ const Clients = () => {
               transform="rotate(180 10 15)"
             ></polygon>
           </svg>
-        </div>
+        </div> */}
       </div>
     </div>
   );
