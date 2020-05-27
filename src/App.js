@@ -5,6 +5,7 @@ import Portfolio from "./layouts/Portfolio";
 import SliderMain from "./layouts/SliderMain";
 import Footer from "./layouts/Footer";
 import Contact from "./layouts/Contact";
+import Ads from "./layouts/Ads";
 import Clients from "./layouts/Clients";
 
 import "./styles/App.scss";
@@ -16,6 +17,7 @@ function App() {
     <>
       <Header />
       <SliderMain />
+      <Ads/>
       <Portfolio />
       <Clients />
       <Footer />

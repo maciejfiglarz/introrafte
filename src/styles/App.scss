@@ -9,6 +9,7 @@
 @import "./Footer.scss";
 @import "./Portfolio.scss";
 @import "./SliderMain.scss";
+@import "./Ads.scss";
 
 body {
   background-color: #fff;
@@ -27,4 +28,26 @@ html {
   max-width: 1100px;
   margin: 0 auto;
   position:relative;
+}
+
+.button-primary {
+  border-radius: 10px;
+  font-size: 1.4rem;
+  padding:5px;
+  text-align: center;
+  padding: 10px 20px;
+  border:0;
+  background-color: $color-background-red;
+  color:white;
+  transition-duration: 1s;
+  display:block;
+  &:hover {
+  background: $color-background-red-hover;
+  }
+  &--bright {
+    background-color: black;;
+  }
+  &--center {
+    margin:0 auto;
+  }
 }

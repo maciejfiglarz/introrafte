@@ -1,0 +1,36 @@
+.ads {
+  &--first{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(255, 19, 0, 1) 0%,
+      rgba(48, 4, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    padding: 3vh 0;
+  }
+  &--second{
+    .ads__container{
+      flex-direction: row-reverse;
+      color:black;
+    } 
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2vh 0;
+  }  
+  &__text{
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+  }
+  &__content{
+    font-size: 1.5rem;
+    width:60%;
+  }
+  &__image {
+    width: 30%;
+  }
+}
