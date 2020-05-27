@@ -7,6 +7,7 @@ import Footer from "./layouts/Footer";
 import Contact from "./layouts/Contact";
 import Ads from "./layouts/Ads";
 import Clients from "./layouts/Clients";
+import About from "./layouts/About";
 
 import "./styles/App.scss";
 import "./styles/abstracts/_variables.scss";
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <SliderMain />
       <Ads/>
+      <About/>
       <Portfolio />
       <Clients />
       <Footer />
