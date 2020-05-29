@@ -29,6 +29,9 @@ html {
   max-width: 1100px;
   margin: 0 auto;
   position:relative;
+  @include mobile(){
+    width: 95%;
+  }
 }
 
 .button-primary {

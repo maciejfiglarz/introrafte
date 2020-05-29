@@ -4,11 +4,19 @@
   z-index: 999;
   background: $color-background-red;
 
+  @include mobile() {
+    height: 60px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    align-items: flex-end;
+    // align-items: flex-end;
+    height:100%;
+    @include mobile() {
+      justify-content: space-between;
+    }
   }
   &__logo {
     position: absolute;
@@ -17,12 +25,23 @@
     z-index: 999;
     width: 120px;
     transform: translateY(60%);
+    @include mobile() {
+      position: static;
+      transform: translateY(0);
+    }
+
     img {
       width: 120px;
+      @include mobile {
+        width: 50px;
+      }
     }
   }
   &__menu {
     display: flex;
+    @include mobile() {
+      display: none;
+    }
 
     &-item {
       padding: 15px 10px;
@@ -34,6 +53,7 @@
       color: white;
       opacity: 0.7;
       transition-duration: 1s;
+      font-weight: 400;
       &:hover {
         background: $color-background-red-hover;
         opacity: 1;

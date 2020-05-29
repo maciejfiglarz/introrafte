@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import Logo from "../img/logo.svg";
-import { useTranslation } from "react-i18next";
+import Logo from "../img/logo.png";
 
-const MenuResponsive = ({ isMenuResponsive, handleMenuResponsive }) => {
-  const { t, i18n } = useTranslation();
+const MenuResponsive = ({ isMenuResponsive, setIsMenuResponsive }) => {
   const onClickClose = (e) => {
-    handleMenuResponsive(!isMenuResponsive);
+    setIsMenuResponsive(!isMenuResponsive);
   };
-  
+
   return (
     <div
       className={`menu-responsive ${
@@ -22,16 +20,24 @@ const MenuResponsive = ({ isMenuResponsive, handleMenuResponsive }) => {
       </div>
       <ul className="menu-responsive__list">
         <li>
-          <a onClick={onClickClose} href="#about">{t("Kim jesteśmy?")}</a>
+          <a className="menu-responsive__list-item" onClick={onClickClose} href="#about">
+            Kim jesteśmy?
+          </a>
         </li>
         <li>
-          <a onClick={onClickClose} href="#offer">{t("Oferta")}</a>
+          <a className="menu-responsive__list-item" onClick={onClickClose} href="#offer">
+            Oferta
+          </a>
         </li>
         <li>
-          <a onClick={onClickClose} href="#portfolio">{t("Realizacje")}</a>
+          <a className="menu-responsive__list-item" onClick={onClickClose} href="#portfolio">
+            Realizacje
+          </a>
         </li>
         <li>
-          <a onClick={onClickClose} href="#contact">{t("Kontakt")}</a>
+          <a className="menu-responsive__list-item" onClick={onClickClose} href="#contact">
+            Kontakt
+          </a>
         </li>
       </ul>
     </div>

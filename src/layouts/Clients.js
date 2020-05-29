@@ -7,6 +7,13 @@ import goldenmed from "./../img/clients/goldenmed.png";
 import kappa from "./../img/clients/kappa.png";
 import lidl from "./../img/clients/lidl.png";
 
+import image1 from "./../img/clients/1.png";
+import image2 from "./../img/clients/2.png";
+import image3 from "./../img/clients/3.png";
+import image4 from "./../img/clients/4.png";
+
+import image6 from "./../img/clients/6.png";
+
 const Clients = () => {
   const params = {
     spaceBetween: 30,
@@ -48,20 +55,35 @@ const Clients = () => {
       <h1 className="clients__title">ZAUFALI NAM</h1>
       <div className="clients__items">
         <Swiper {...params}>
-          <div>
+          <div className="clients__item">
             <img src={orange} />
           </div>
-          <div>
+          <div className="clients__item">
             <img src={aluform} />
           </div>
-          <div>
+          <div className="clients__item">
             <img src={goldenmed} />
           </div>
-          <div>
+          <div className="clients__item">
             <img src={kappa} />
           </div>
-          <div>
+          <div className="clients__item">
             <img src={lidl} />
+          </div>
+          <div className="clients__item">
+            <img src={image1} />
+          </div>
+          <div className="clients__item">
+            <img src={image2} />
+          </div>
+          <div className="clients__item">
+            <img src={image3} />
+          </div>
+          <div className="clients__item">
+            <img src={image4} />
+          </div>
+          <div className="clients__item">
+            <img src={image6} />
           </div>
         </Swiper>
         {/* <div className="swiper-button-next-uniq">

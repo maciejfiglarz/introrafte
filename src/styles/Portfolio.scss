@@ -25,6 +25,9 @@
     opacity: 0.8;
     transition-duration: 1s;
     cursor: pointer;
+    @include mobile(){
+      width: 100%;
+    }
     &:hover {
       opacity: 1;
     }
