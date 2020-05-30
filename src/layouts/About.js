@@ -3,14 +3,14 @@ import React, { Component } from "react";
 import aboutimg from "../img/about.svg";
 import AtutContent from "../components/AtutContent";
 // import Background from "../img/19366.jpg";
-import img1 from "../img/01.svg";
-import img2 from "../img/02.svg";
-import img3 from "../img/03.svg";
-import img4 from "../img/04.svg";
-import img5 from "../img/05.svg";
-import img6 from "../img/06.svg";
-import img7 from "../img/07.svg";
-import img8 from "../img/08.svg";
+import img1 from "../img/1.png";
+import img2 from "../img/2.png";
+import img3 from "../img/3.png";
+import img4 from "../img/4.png";
+import img5 from "../img/5.png";
+import img6 from "../img/6.png";
+import img7 from "../img/7.png";
+import img8 from "../img/8.png";
 
 import { useTranslation, Translation } from "react-i18next";
 
@@ -82,7 +82,7 @@ class About extends Component {
               <AtutContent
                 style={this.style}
                 img={img4}
-                text="Doświadczenie w branży sceneograficznej"
+                text="Własne mobile reklamowe do wynajęcia"
               />
             </div>
             <div className="about-txt-2">

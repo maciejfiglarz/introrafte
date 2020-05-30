@@ -53,13 +53,13 @@ const Footer = () => {
             })}
 
             <div className="footer-content__box footer-content__info">
-              <div className="footer-content__info-phone">tel. 795 633 929</div>
+              <div className="footer-content__info-phone">tel. 530-858-437</div>
               <div className="footer-content__info-address">
                 <div className="footer-content__info-address--bold">
-                YStudio
+                Intro Rafter
                 </div>
-                <div>ul. Przemysłowa 24</div>
-                <div>39-300 Mielec</div>
+                <div>ul. Spokojna 28</div>
+                <div>05-140 Serock</div>
               </div>
               <div className="footer-content__info-mail"></div>
             </div>
