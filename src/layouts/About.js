@@ -51,7 +51,8 @@ class About extends Component {
         ref={this.myRef}
         id="about"
         className="about"
-        onMouseMove={this.animationFigures.bind(this)}
+        onMouseMove={this.animationFigures.bind(this)} 
+        id="about"
       >
         <div className="about-box-1">
           <span>
@@ -67,12 +68,12 @@ class About extends Component {
               <AtutContent
                 img={img1}
                 style={this.style}
-                text="Działamy kreatywnie z pasją"
+                text="Wykonujemy kompleksową obsługe POMIAR-DORADZTWO-RÓŻNE WARIANTY CENOWE-DOJAZD NA MIEJSCE DO KLIENTA"
               />
               <AtutContent
                 style={this.style}
                 img={img2}
-                text="Kompleksowa obsługa: projekt – wykonanie – wydruk"
+                text="Kompleksowa obsługa PROJEKT-WYDRUK-MONTAŻ"
               />
               <AtutContent
                 style={this.style}
@@ -100,7 +101,7 @@ class About extends Component {
                 <AtutContent
                   style={this.style}
                   img={img7}
-                  text="10 lat doświadczenia w poligrafii"
+                  text="12 Lat doświadczenia i ciągłego doskonalenia w branży"
                 />
                 <AtutContent
                   style={this.style}

@@ -4,6 +4,7 @@ import Header from "./layouts/Header";
 import Portfolio from "./layouts/Portfolio";
 import SliderMain from "./layouts/SliderMain";
 import Footer from "./layouts/Footer";
+import FooterBar from "./layouts/FooterBar";
 import Contact from "./layouts/Contact";
 import Ads from "./layouts/Ads";
 import Clients from "./layouts/Clients";
@@ -23,6 +24,8 @@ function App() {
       <Portfolio />
       <Clients />
       <Footer />
+      <Contact />
+      <FooterBar />
     </>
   );
 }

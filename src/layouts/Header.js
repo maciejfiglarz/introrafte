@@ -1,6 +1,9 @@
 import React, { Component, useState } from "react";
 import logo from "./../img/logo.png";
 import MenuResponsive from "./../components/MenuResponsive";
+import Tables from "./../components/Tables";
+
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuResponsive, setIsMenuResponsive] = useState("");
@@ -17,19 +20,24 @@ const Header = () => {
           </div>
           <ul className="header__menu">
             <li>
-              <a className="header__menu-item" href="#about">
-                O nas
+              <a className="header__menu-item" href="#offer">
+                Oferta
               </a>
             </li>
             <li>
-              <a className="header__menu-item" href="#offer">
-                Oferta
+              <a className="header__menu-item" href="#about">
+                O nas
               </a>
             </li>
             <li>
               <a className="header__menu-item" href="#collaboration">
                 Współpraca
               </a>
+            </li>
+            <li>
+              {/* <Link to="/tables" className="header__menu-item">
+                Tablice informacyjne
+              </Link> */}
             </li>
             <li>
               <a className="header__menu-item" href="#contact">

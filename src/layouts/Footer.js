@@ -3,38 +3,72 @@ import React from "react";
 const Footer = () => {
   const data = [
     {
-      title: "Strony internetowe",
+      title: "SPECJALISTYCZNE NA WYMIAR",
       data: [
-        "Strony i serwisy WWW",
-        "Sklepy Internetowe",
-        "Systemy i aplikacje",
-        "Domeny i hostingi",
+        "Tabliczki BHP",
+        "Wdrażanie HSP",
+        "Ciągi komunikacyjne w firmach",
+        "Oznakowanie wysokościowe",
+        "Oznakowanie magazynów",
+        "Innowacyjne pomysły",
+        "Tablice magnetyczne - suchościeralne na wymiar",
+        "Kieszenie PCV",
       ],
     },
     {
-      title: "Reklamy",
+      title: "OUTDOR",
       data: [
-        "Reklama zewnętrzna",
-        "Oznakowanie budynków",
-        "Reklama na pojazdach",
-        "Tablice do wynajęcia",
+        "Kampannie Reklamowe obsługi kompleksowe",
+        "Reklama mobilna",
+        "Witryny",
+        "Oklejanie aut",
+        "Kasetony",
+        "Litery 3D",
+        "Banery reklamowe",
+        "Szyldy",
+        "Tabliczki",
+        "Zdobienie okien,szyb i balkonów",
       ],
     },
     {
-      title: "Identyfikacja wizualna",
+      title: "INDOR",
       data: [
-        "Projektowanie graficzne",
+        "roll-up",
         "Drukarnia",
-        "Gadżety reklamowe",
         "Systemy wystawiennicze",
-        "Fotografia reklamowa",
+        "Wyroby z plexi PCV i PCW",
+        "Ramki OWZ",
+        "Phototapety",
+      ],
+    },
+    {
+      title: "USŁUGI REKLAMOWE",
+      data: [
+        "Kompleksowa obsługa kampanni rekamowych",
+        "Kampannie na otwarcia",
+        "Kolportaż ulotek",
+        "DRUK Wielkoformatowy",
+        "Poligrafia",
+        "Montaże reklam",
+        "Wyklejanie billboardów",
+      ],
+    },
+    {
+      title: "PROJEKTOWANIE GRAFICZNE",
+      data: [
+        "Identyfikacja wizualna firmy",
+        "loga",
+        "poligrafia",
+        "banery",
+        "plakaty",
       ],
     },
   ];
   return (
-    <footer className="footer">
+    <section className="footer" id="collaboration">
       <div className="footer-content">
         <div className="footer-content__container container">
+
           <div className="footer-content__box-wrap">
             {data.map((item) => {
               const { title, data } = item;
@@ -51,26 +85,15 @@ const Footer = () => {
                 </div>
               );
             })}
-
-            <div className="footer-content__box footer-content__info">
-              <div className="footer-content__info-phone">tel. 530-858-437</div>
-              <div className="footer-content__info-address">
-                <div className="footer-content__info-address--bold">
-                Intro Rafter
-                </div>
-                <div>ul. Spokojna 28</div>
-                <div>05-140 Serock</div>
-              </div>
-              <div className="footer-content__info-mail"></div>
-            </div>
           </div>
+
         </div>
       </div>
 
-      <div className="footer__bar">
+      {/* <div className="footer__bar">
         <p>Wszelkie Prawa Zastrzeżone. Intro Rafter &copy; 2020</p>
-      </div>
-    </footer>
+      </div> */}
+    </section>
   );
 };
 

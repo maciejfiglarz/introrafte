@@ -7,7 +7,7 @@ import print3 from "./../img/portfolio/print3.jpg";
 const Ads = () => {
   return (
     <>
-      <div className="ads ads--first">
+      <div className="ads ads--first" id="offer">
         <div className="ads__container container">
           <div className="ads__content">
             <div className="ads__text">

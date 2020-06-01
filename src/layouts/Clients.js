@@ -13,6 +13,11 @@ import image3 from "./../img/clients/3.png";
 import image4 from "./../img/clients/4.png";
 
 import image6 from "./../img/clients/6.png";
+import image7 from "./../img/clients/aggaz.png";
+import image8 from "./../img/clients/kik.png";
+import image9 from "./../img/clients/spolem.png";
+
+
 
 const Clients = () => {
   const params = {
@@ -84,6 +89,15 @@ const Clients = () => {
           </div>
           <div className="clients__item">
             <img src={image6} />
+          </div>
+          <div className="clients__item">
+            <img src={image7} />
+          </div>
+          <div className="clients__item">
+            <img src={image8} />
+          </div>
+          <div className="clients__item">
+            <img src={image9} />
           </div>
         </Swiper>
         {/* <div className="swiper-button-next-uniq">
