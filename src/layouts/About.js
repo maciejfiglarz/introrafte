@@ -51,15 +51,42 @@ class About extends Component {
         ref={this.myRef}
         id="about"
         className="about"
-        onMouseMove={this.animationFigures.bind(this)} 
+        onMouseMove={this.animationFigures.bind(this)}
         id="about"
       >
         <div className="about-box-1">
           <span>
             <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+              O nas - Jesteśmy młodą, dynamicznie rozwijającą się firmą powstałą
+              w 2008 roku. Kilka lat pracy w dziedzinie reklamy
+              wielkoformatowej, reklamy mobilnej czy poligrafii, pozwoliło nam
+              zdobyć doświadczenie oraz poznać rynek usług reklamowych.
             </p>
-            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <br></br>
+            <p>
+              Dziękujemy za odwiedzenie naszej strony internetowej. Jako
+              nowoczesna firma chcemy dać Państwu możliwość pozostania w
+              kontakcie z nami oraz z naszą ofertą. Nowy system zarządzania
+              treścią pozwoli nam na regularne aktualizacje naszego serwisu.
+              Świadczymy kompleksowe usługi reklamowe, od projektu po montaż
+              materiałów reklamowych. W chwili obecnej świadczymy usługi z
+              zakresu poligrafii, szeroko rozumianej reklamy wizualnej,
+              projektowania graficznego oraz fotografii reklamowej i
+              okolicznościowej. Priorytetem dla nas jest najwyższa jakość
+              naszych usług i zadowolenie Klientów. Jeśli są Państwo
+              zainteresowani naszą ofertą zapraszamy do współpracy.
+            </p>
+            <p>
+              Opracowując system pracy wyszliśmy naprzeciw Państwa oczekiwaniom.<br></br><br></br>
+              <ul className="footer-content__box-list">
+                <li className="about__list-item">Ustalamy terminy i miejsca spotkań dostosowane do Państwa
+              potrzeb i wymagań.</li>
+              <li className="about__list-item">Oferujemy szybkie oraz odroczone w czasie
+              terminy realizacji.</li>
+              <li className="about__list-item">Proponowane przez nas ceny są jedne z
+              najlepszych na rynku.</li>
+              </ul>
+            </p>
           </span>
         </div>
         <div className="about-box-2">
@@ -113,7 +140,7 @@ class About extends Component {
           </div>
         </div>
 
-        <div className="listener"></div>
+        {/* <div className="listener"></div> */}
         {/* <div className="about-img"></div> */}
       </div>
     );

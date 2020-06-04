@@ -4,6 +4,8 @@ import bg from "../img/bg.svg";
 import contact from "../img/contact.svg";
 import API from "./../helper/api";
 
+import title from "./../img/contact_last.svg";
+
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -53,6 +55,11 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <br></br><br></br>
+        <div className="clients__title">
+        <img src={title} />
+      </div>
     <div id="contact" className="contact">
       <div className="contact__container container">
         <div className="contact-box">
@@ -136,7 +143,7 @@ const Contact = () => {
                 <i className="state" aria-hidden="true"></i>
                 <span>
                   {t(
-                    "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych oraz ogólnym rozporządzeniem o ochronie danych osobowych w związku z realizacją zgłoszenia. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem/am poinformowany/a, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest ."
+                    "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych oraz ogólnym rozporządzeniem o ochronie danych osobowych w związku z realizacją zgłoszenia. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem/am poinformowany/a, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Intro Rafter."
                   )}
                 </span>
               </label>
@@ -150,7 +157,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-box contact-box--destination">
-          <div className="contact__info">
+          {/* <div className="contact__info">
             <div className="contact__info-company">Intro Rafter</div>
             <div className="contact__info-phone">tel. 530-858-437</div>
             <div className="contact__info-adress">
@@ -158,10 +165,25 @@ const Contact = () => {
               <div>05-140 Serock</div>
             </div>
             <div className="contact__info-mail"></div>
+          </div> */}
+          <div className="contact-box-pl">
+            <div className="contact-box-pl-data">
+              <div className="contact-box-pl-cover"></div>
+              <div className="contact-box-pl-info">
+                <div className="company">Intro Rafter</div> <br />
+                <i className="far fa-address-book"></i> ul. Spokojna 28 05-140
+                Serock
+                <br />
+                <i className="far fa-envelope"></i> tel. 999-999-999 <br />
+                <i className="far fa-envelope"></i> biuro@intrarafter.pl
+                <br />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

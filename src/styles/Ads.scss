@@ -1,4 +1,5 @@
 .ads {
+  padding: 2vh 0;
   &--first {
     background: rgb(2, 0, 36);
     background: linear-gradient(
@@ -8,12 +9,14 @@
       rgba(48, 4, 0, 1) 100%,
       rgba(0, 0, 0, 1) 100%
     );
-    padding: 3vh 0;
+    // padding: 3vh 0;
   }
   &--second {
+    background: #eeeeee;
     .ads__container {
       flex-direction: row-reverse;
       color: black;
+
       @include mobile() {
         flex-direction: column-reverse;
       }
@@ -23,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vh 0;
+
     flex-wrap: wrap;
     @include mobile() {
       flex-direction: column-reverse;
@@ -31,7 +34,13 @@
   }
   &__text {
     font-size: 1.5rem;
-    margin-bottom: 3vh;
+    text-align: left;
+    line-height: 1.8;
+    h2 {
+      font-size: 2rem;
+      line-height: 2.1rem;
+      margin-bottom: 20px;
+    }
   }
   &__content {
     font-size: 1.5rem;

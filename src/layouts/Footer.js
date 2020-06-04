@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Footer = () => {
   const data = [
     {
@@ -65,35 +66,35 @@ const Footer = () => {
     },
   ];
   return (
-    <section className="footer" id="collaboration">
-      <div className="footer-content">
-        <div className="footer-content__container container">
-
-          <div className="footer-content__box-wrap">
-            {data.map((item) => {
-              const { title, data } = item;
-              return (
-                <div key={title} className="footer-content__box">
-                  <div className="footer-content__box-title">{title}</div>
-                  <ul className="footer-content__box-list">
-                    {data.map((value) => (
-                      <li key={value} className="footer-content__box-item">
-                        {value}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            })}
+    <>
+      <section className="footer" id="offer">
+        <div className="footer-content">
+          <div className="footer-content__container container">
+            <div className="footer-content__box-wrap">
+              {data.map((item) => {
+                const { title, data } = item;
+                return (
+                  <div key={title} className="footer-content__box">
+                    <div className="footer-content__box-title">{title}</div>
+                    <ul className="footer-content__box-list">
+                      {data.map((value) => (
+                        <li key={value} className="footer-content__box-item">
+                          {value}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-
         </div>
-      </div>
 
-      {/* <div className="footer__bar">
+        {/* <div className="footer__bar">
         <p>Wszelkie Prawa Zastrzeżone. Intro Rafter &copy; 2020</p>
       </div> */}
-    </section>
+      </section>
+    </>
   );
 };
 

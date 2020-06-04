@@ -3,6 +3,7 @@ import Header from "./layouts/Header";
 
 import Portfolio from "./layouts/Portfolio";
 import SliderMain from "./layouts/SliderMain";
+import Slider from "./layouts/Slider";
 import Footer from "./layouts/Footer";
 import FooterBar from "./layouts/FooterBar";
 import Contact from "./layouts/Contact";
@@ -18,9 +19,10 @@ function App() {
   return (
     <>
       <Header />
-      <SliderMain />
-      <Ads/>
-      <About/>
+      {/* <SliderMain /> */}
+      <Slider />
+      <About />
+      <Ads />
       <Portfolio />
       <Clients />
       <Footer />

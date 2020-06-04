@@ -11,6 +11,8 @@
 @import "./SliderMain.scss";
 @import "./Ads.scss";
 @import "./About.scss";
+@import "./Table.scss";
+@import "./Slider.scss";
 
 body {
   background-color: #fff;
@@ -53,5 +55,11 @@ html {
   }
   &--center {
     margin:0 auto;
+  }
+  &--right {
+    margin-left: 100%;
+    transform: translateX(-100%);
+    margin-top: 20px;
+    min-width: 150px;
   }
 }

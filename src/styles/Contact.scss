@@ -1,19 +1,19 @@
 .contact {
   width: 100%;
   position: relative;
-  height: auto;
+  // height: auto;
   // display: flex;
   // flex-wrap: wrap;
   border-top: 3px solid white;
   // background-image: url("../img/19366.jpg");
   // background-size: cover;
-  justify-content: space-between;
-  margin-top: 50px;
-  background-color: #004a6e;
 
+  // padding: 0 5% 5% 5%;
+  
   &__container {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 5% 5% 5%;
   }
 
   &__info {
@@ -22,7 +22,7 @@
 
     &-company {
       font-size: 3rem;
-      margin-bottom:15px;
+      margin-bottom: 15px;
     }
   }
 
@@ -53,12 +53,13 @@
     margin: 0 auto;
     z-index: 1;
     height: auto;
-
+    background-color: $color-background-red;
     padding: 10px;
     position: relative;
 
     &__title {
       font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     @include mobile() {
@@ -76,7 +77,6 @@
       }
     }
 
-  
     textarea {
       background: transparent;
       border: none;
@@ -84,31 +84,48 @@
 
     .contact-box-pl {
       position: relative;
-      flex-basis: 50%;
+      width: 100%;
+
       background-size: cover;
       background-image: url("../img/warsaw.jpg");
+      height: 100%;
 
       .contact-box-pl-data {
         color: white;
-        font-size: 18px;
+        font-size: 13px;
         position: absolute;
         bottom: 10px;
         z-index: 999;
+        text-align: left;
 
         i {
           font-size: 18px;
           padding: 10px;
         }
       }
+      .contact-box-pl-info {
+        color: white;
+        font-size: 13px;
+        line-height: 17px;
+        padding:10px;
+        .company {
+          font-size: 20px;
+          font-weight:bold;
+          margin-left: 10px;
+        }
+      }
+
 
       &:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: #004a6e;
+        background-color: $color-background-red;
         filter: opacity(0.9);
         transition: 0.5s;
+        left: 0;
+        top: 0;
       }
 
       img {
@@ -128,7 +145,7 @@
     .contact-box-bg {
       position: relative;
       font-size: 18px;
-      flex-basis: 50%;
+      // flex-basis: 50%;
       background-size: cover;
       background-image: url("../img/sofia.jpg");
 
@@ -161,6 +178,7 @@
         background-color: #004a6e;
         filter: opacity(0.9);
         transition: 0.5s;
+        left: 0;
       }
 
       &:hover:after {
@@ -279,7 +297,7 @@ footer {
   width: 100%;
   color: white;
   z-index: 1;
-  font-size:1.3rem;
+  font-size: 1.3rem;
 
   &-error {
     background: red;
@@ -340,7 +358,7 @@ footer {
       background: none;
       border: 0;
       resize: none;
-      padding:5px;
+      padding: 5px;
     }
   }
 

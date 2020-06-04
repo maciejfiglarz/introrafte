@@ -9,9 +9,9 @@ const Navigation = ({ handleMenuResponsive,isMenuResponsive}) => {
   }
   return (
     <div className="nav">
-      <div class="logo">
+      <div className="logo">
         <img id="logo-main" src={Logo} alt="" />
-        <div class="menu">
+        <div className="menu">
           <ul className="menu-list">
             <li>
               <a href="#about">{t("Kim jesteśmy?")}</a>
@@ -34,16 +34,16 @@ const Navigation = ({ handleMenuResponsive,isMenuResponsive}) => {
           <i className="fas fa-bars"></i>
         </div>
 
-        <div class="languages">
-          <div class="lang">
+        <div className="languages">
+          <div className="lang">
             <a href="index.html">
               <img src="img/polska.png" alt="" srcset="" />
             </a>
           </div>
-          <div class="lang">
+          <div className="lang">
             <img src="img/anglia.png" alt="" srcset="" />
           </div>
-          <div class="lang">
+          <div className="lang">
             <a href="bg.html">
               <img src="img/bulgaria.png" alt="" srcset="" />
             </a>

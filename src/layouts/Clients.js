@@ -17,7 +17,7 @@ import image7 from "./../img/clients/aggaz.png";
 import image8 from "./../img/clients/kik.png";
 import image9 from "./../img/clients/spolem.png";
 
-
+import zaufali from "./../img/zaufali_nam.svg";
 
 const Clients = () => {
   const params = {
@@ -57,7 +57,7 @@ const Clients = () => {
   };
   return (
     <div className="clients container">
-      <h1 className="clients__title">ZAUFALI NAM</h1>
+      <h1 className="clients__title"><img src={zaufali} /></h1>
       <div className="clients__items">
         <Swiper {...params}>
           <div className="clients__item">
