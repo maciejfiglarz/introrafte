@@ -12,7 +12,7 @@ import img6 from "../img/6.png";
 import img7 from "../img/7.png";
 import img8 from "../img/8.png";
 
-import { useTranslation, Translation } from "react-i18next";
+import title from "./../img/about_last.svg";
 
 class About extends Component {
   state = {
@@ -55,6 +55,9 @@ class About extends Component {
         id="about"
       >
         <div className="about-box-1">
+          <h1 className="clients__title">
+            <img src={title} />
+          </h1>
           <span>
             <p>
               O nas - Jesteśmy młodą, dynamicznie rozwijającą się firmą powstałą
@@ -62,7 +65,7 @@ class About extends Component {
               wielkoformatowej, reklamy mobilnej czy poligrafii, pozwoliło nam
               zdobyć doświadczenie oraz poznać rynek usług reklamowych.
             </p>
-            <br></br>
+            
             <p>
               Dziękujemy za odwiedzenie naszej strony internetowej. Jako
               nowoczesna firma chcemy dać Państwu możliwość pozostania w
@@ -77,14 +80,20 @@ class About extends Component {
               zainteresowani naszą ofertą zapraszamy do współpracy.
             </p>
             <p>
-              Opracowując system pracy wyszliśmy naprzeciw Państwa oczekiwaniom.<br></br><br></br>
+              Opracowując system pracy wyszliśmy naprzeciw Państwa oczekiwaniom.
+              <br></br>
+              <br></br>
               <ul className="footer-content__box-list">
-                <li className="about__list-item">Ustalamy terminy i miejsca spotkań dostosowane do Państwa
-              potrzeb i wymagań.</li>
-              <li className="about__list-item">Oferujemy szybkie oraz odroczone w czasie
-              terminy realizacji.</li>
-              <li className="about__list-item">Proponowane przez nas ceny są jedne z
-              najlepszych na rynku.</li>
+                <li className="about__list-item">
+                  Ustalamy terminy i miejsca spotkań dostosowane do Państwa
+                  potrzeb i wymagań.
+                </li>
+                <li className="about__list-item">
+                  Oferujemy szybkie oraz odroczone w czasie terminy realizacji.
+                </li>
+                <li className="about__list-item">
+                  Proponowane przez nas ceny są jedne z najlepszych na rynku.
+                </li>
               </ul>
             </p>
           </span>

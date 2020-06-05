@@ -1,13 +1,15 @@
 .clients {
   padding: 3vh 0;
+
   &__title {
     font-size: 2.8rem;
     font-weight: bold;
     width: 100%;
     text-align: center;
     color: $color-background-red;
-    margin-bottom: 0;
+    margin: 1vh 0  5vh 0;
   }
+  
   &__items {
     position: relative;
     img {

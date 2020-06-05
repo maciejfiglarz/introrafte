@@ -1,10 +1,12 @@
 .footer {
   line-height: auto;
+  padding:3vh 0;
   &-content {
-    background: url("./../img/footer_background.jpg") no-repeat center center
-      fixed;
-    background-size: cover;
-    padding: 20px;
+    // background: url("./../img/footer_background.jpg") no-repeat center center
+    //   fixed;
+    // background-size: cover;
+  
+    padding: 3vh 0;
     &__container {
       display: flex;
       flex-wrap: wrap;
@@ -30,6 +32,7 @@
         font-size: 1.5em;
         font-weight: bold;
         margin-bottom:10px;
+        color: $color-background-red;
       }
       &-list {
         list-style: none;
@@ -41,10 +44,11 @@
         font-weight: bold;
         line-height: 2rem;
         margin-left: 16px;
+        color: black;
 
         &::before {
           content: "\2022";
-          color: white;
+          color: $color-background-red;
           font-weight: bold;
           display: inline-block;
           width: 1em;

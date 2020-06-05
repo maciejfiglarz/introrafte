@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./layouts/Header";
 
 import Portfolio from "./layouts/Portfolio";
+import PortfolioWebsite from "./layouts/PortfolioWebsite";
 import SliderMain from "./layouts/SliderMain";
 import Slider from "./layouts/Slider";
 import Footer from "./layouts/Footer";
@@ -22,10 +23,12 @@ function App() {
       {/* <SliderMain /> */}
       <Slider />
       <About />
+      <Footer />
+      <PortfolioWebsite />
       <Ads />
       <Portfolio />
+ 
       <Clients />
-      <Footer />
       <Contact />
       <FooterBar />
     </>

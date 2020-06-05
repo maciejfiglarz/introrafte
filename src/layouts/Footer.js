@@ -1,5 +1,5 @@
 import React from "react";
-
+import title from "./../img/offer_lat.svg";
 
 const Footer = () => {
   const data = [
@@ -68,6 +68,9 @@ const Footer = () => {
   return (
     <>
       <section className="footer" id="offer">
+        <div className="clients__title">
+          <img src={title} />
+        </div>
         <div className="footer-content">
           <div className="footer-content__container container">
             <div className="footer-content__box-wrap">

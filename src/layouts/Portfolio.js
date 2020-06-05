@@ -80,7 +80,7 @@ class Portfolio extends React.Component {
         </ModalGateway>
         <div className="portfolio" id="portfolio">
           <div className="portfolio__container container">
-            <div className="portfolio__title">
+            <div className="clients__title">
               <img src={realizacje} />
             </div>
             <div className="portfolio__item-wrap">
