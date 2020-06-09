@@ -14,10 +14,10 @@ const Header = () => {
   };
 
   const onClickTable = () => {
-    console.log('log','click');
+  
     setIsTable(!isTable);
   };
-  console.log('isTable',isTable);
+
   return (
     <>
       <header className="header">

@@ -11,6 +11,7 @@ import img5 from "../img/5.png";
 import img6 from "../img/6.png";
 import img7 from "../img/7.png";
 import img8 from "../img/8.png";
+import img9 from "../img/9.png";
 
 import title from "./../img/about_last.svg";
 
@@ -104,12 +105,12 @@ class About extends Component {
               <AtutContent
                 img={img1}
                 style={this.style}
-                text="Wykonujemy kompleksową obsługe POMIAR-DORADZTWO-RÓŻNE WARIANTY CENOWE-DOJAZD NA MIEJSCE DO KLIENTA"
+                text="Szybkość realizowanych zleceń"
               />
               <AtutContent
                 style={this.style}
                 img={img2}
-                text="Kompleksowa obsługa PROJEKT-WYDRUK-MONTAŻ"
+                text="Konkurencyjne ceny"
               />
               <AtutContent
                 style={this.style}
@@ -121,14 +122,15 @@ class About extends Component {
                 img={img4}
                 text="Własne mobile reklamowe do wynajęcia"
               />
-            </div>
-            <div className="about-txt-2">
-              <div className="about-txt-1">
-                <AtutContent
+                          <AtutContent
                   style={this.style}
                   img={img5}
                   text="Wiedza, profesjonalizm, konsekwencja"
                 />
+            </div>
+            <div className="about-txt-2">
+              <div className="about-txt-1">
+    
                 <AtutContent
                   style={this.style}
                   img={img6}
@@ -143,6 +145,11 @@ class About extends Component {
                   style={this.style}
                   img={img8}
                   text="Bezproblemowa i szybka komunikacja"
+                />
+                       <AtutContent
+                  style={this.style}
+                  img={img9}
+                  text="Jako PRODUCENT proponujemy konkurencyjne ceny"
                 />
               </div>
             </div>
