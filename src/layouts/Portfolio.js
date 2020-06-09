@@ -23,6 +23,7 @@ import photo16 from "./../img/portfolio/16.jpg";
 
 import realizacje from "./../img/ostatnie_realizacje.svg";
 
+
 const images = [
   { source: photo1 },
   { source: photo2 },

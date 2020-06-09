@@ -20,8 +20,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <SliderMain /> */}
-      <Slider />
+      <SliderMain />
+      {/* <Slider /> */}
       <About />
       <Footer />
       <PortfolioWebsite />

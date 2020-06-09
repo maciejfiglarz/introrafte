@@ -7,16 +7,17 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuResponsive, setIsMenuResponsive] = useState("");
-  const [isTable, setIsTable] = useState("");
+  const [isTable, setIsTable] = useState(false);
 
   const onClickMenuResponsive = (e) => {
     setIsMenuResponsive(!isMenuResponsive);
   };
 
   const onClickTable = () => {
+    console.log('log','click');
     setIsTable(!isTable);
   };
-
+  console.log('isTable',isTable);
   return (
     <>
       <header className="header">

@@ -4,11 +4,16 @@
   // height: auto;
   // display: flex;
   // flex-wrap: wrap;
-  border-top: 3px solid white;
+
   // background-image: url("../img/19366.jpg");
   // background-size: cover;
 
   // padding: 0 5% 5% 5%;
+&__wrap {
+  background: #eeeeee;
+  padding: 3vh 0;
+  border-top: 3px solid black;
+}
   
   &__container {
     display: flex;

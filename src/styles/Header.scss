@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 999;
   background: $color-background-red;
-
+  z-index:2;
   @include mobile() {
     height: 60px;
   }
